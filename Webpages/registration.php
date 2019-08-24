@@ -11,7 +11,7 @@
 		$password = isset($_GET['pass']) ? $_GET['pass'] : '';
 
 		#Enter into SQL records | Note: Vulnerable to SQL Injection
-		$sql = "INSERT INTO WebSocial (name, user_id, pass) VALUES ('".$name."', '".$user_id."', '".$password."')";
+		$sql = "INSERT INTO websocial (name, user_id, pass) VALUES ('".$name."', '".$user_id."', '".$password."')";
 
 	  #Establish Connetion and Add
 		if ($conn->query($sql) == TRUE) {

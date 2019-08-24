@@ -17,15 +17,15 @@
 		$userid = trim($_POST['user_id']);
 		$password = trim($_POST['pass']);
 
-		$query = "SELECT * FROM testdat and user_id='$userid' and pass='$password'";
-		$bit = "SELECT * FROM testdat WHERE user_id='$userid' and pass='$password'";
+		$query = "SELECT * FROM websocial and user_id='$userid' and pass='$password'";
+		$bit = "SELECT * FROM websocial WHERE user_id='$userid' and pass='$password'";
 
 		#Query the given variables and check
 		$result = mysqli_query($conn, $query);
 		$rows = mysqli_num_rows($result);
 
 		#Get Name of the User for a welcome message
-		$name = mysqli_query($conn, "SELECT * FROM testdat WHERE user_id='$userid'");
+		$name = mysqli_query($conn, "SELECT * FROM websocial WHERE user_id='$userid'");
 
 		#If there is such a user avaiable, set session cookies to reflect the information
 		if ($rows == 1) {

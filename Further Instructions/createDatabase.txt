@@ -1,0 +1,15 @@
+To create a simple databse, login to MySQL on your computer
+and type in the these lines of code:
+
+
+CREATE DATABASE WebSocial;
+
+USE WebSocial;
+
+CREATE TABLE websocial (
+	'id' PRIMARY KEY AUTO_INCREMENT,
+	'user_id' varchar(255) NOT NULL,
+	'name' varchar(50) DEFAULT NULL,
+	'pass' varchar(255) DEFAULT NULL,
+);
+	
