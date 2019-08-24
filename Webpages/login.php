@@ -1,12 +1,12 @@
 <?php
 	#If cookies show already logged in, redirect to welcome page
-	require('check.php');
-	include('string.php');
+	require('Security/check.php');
+	include('Security/string.php');
 
 	#Start Cookies
 	session_start();
 	#Require for Connection
-	require('database.php');
+	require('Securtiy/database.php');
 
 	#Instantiate to nothing
 	$userid = $password = "";

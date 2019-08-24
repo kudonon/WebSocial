@@ -1,6 +1,6 @@
 <?php
 	#Link the connection data
-	require('connection.php');
+	require('Security/connection.php');
 
 
 	if (isset($_GET['userid'])) {

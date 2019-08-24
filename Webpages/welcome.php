@@ -1,6 +1,6 @@
 <?php
   #Check if already logged in, else redirect
-  require('authentication.php');
+  require('Security/authentication.php');
 ?>
 
 <!DOCTYPE html>

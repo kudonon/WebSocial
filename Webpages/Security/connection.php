@@ -4,7 +4,7 @@
 	$servername = "localhost";
 	$user = ""; //your MySQL Username (do not make root)
 	$pass = ""; //your MySQL Password (do not make root)
-	$database = "WebSocial"; //Database Name: Chosen as WebSocial for this Tutorial
+	$database = "WebSocial"; //Database Name: Chosen as WebSocial for this Project
 	#Establish Connection with MySQL
 	$conn = new mysqli($servername, $user, $pass, $database);
 	#Verification
